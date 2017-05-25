@@ -1,3 +1,5 @@
+//=============================================================================
+
 #include "C_Event.h"
 #include <iostream>
 using namespace std;
@@ -161,7 +163,6 @@ void C_Event::onKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 	case SDLK_DOWN:
 	{
 		cout << "Hey, HABR! DOWN pressed by m0sk1t\n";
-		/////////////////////////////////////
 		
 		break;
 	}

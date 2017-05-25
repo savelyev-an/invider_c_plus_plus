@@ -1,9 +1,7 @@
 //=============================================================================
-#ifndef _BULLET_H_
-#define _BULLET_H_
+#include "CEntity.h"
 
-#include "CEntity.h";
-//=============================================================================
+#pragma once
 class Bullet : public CEntity {
 public:
 	static float	maxSpeedY;
@@ -13,6 +11,5 @@ public:
 	void onLoop();
 };
 
-//=============================================================================
 
-#endif
+

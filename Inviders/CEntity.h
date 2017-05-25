@@ -1,6 +1,7 @@
-//==============================================================================
-#ifndef _CENTITY_H_
-#define _CENTITY_H_
+//=============================================================================
+
+#pragma once
+
 
 #include <vector>
 #include <list> 
@@ -94,13 +95,9 @@ public:
 
 	virtual void onAnimate();
 
-	virtual void onCollision(CEntity* Entity);
-
 	void    onMove(float MoveX, float MoveY);
 
 	void 	stopMove();
-
-	bool    collides(int oX, int oY, int oW, int oH);
 
 	bool isDead() { return dead; };
 
@@ -113,9 +110,4 @@ public:
 private:
 	virtual bool 	posValid(int NewX, int NewY);
 
-//	bool 	PosValidEntity(CEntity* Entity, int NewX, int NewY);
 };
-
-//==============================================================================
-
-#endif

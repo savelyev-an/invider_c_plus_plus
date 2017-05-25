@@ -1,3 +1,4 @@
+//=============================================================================
 #pragma once
 #include "CEntity.h"
 class Bomb : public CEntity
@@ -9,4 +10,3 @@ public:
 	Bomb();
 	void onLoop();
 };
-

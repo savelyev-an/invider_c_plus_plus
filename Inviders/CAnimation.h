@@ -1,5 +1,5 @@
-#ifndef _CANIMATION_H_
-#define _CANIMATION_H_
+//=============================================================================
+#pragma once
 
 #include <SDL.h>
 
@@ -28,5 +28,3 @@ public:
 
 	int getCurrentFrame();
 };
-
-#endif

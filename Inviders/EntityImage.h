@@ -1,9 +1,9 @@
-#ifndef _EntityImageH_
-#define _EntityImageH_
+//=============================================================================
+
+#pragma once
 
 #include <SDL.h>
 #include "CSurface.h";
-//#include <SDL_image.h>
 
 class EntityImage {
 public:
@@ -18,5 +18,4 @@ public:
 	void onCleanUp();
 };
 
-#endif
 

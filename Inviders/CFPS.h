@@ -1,5 +1,6 @@
-#ifndef _CFPS_H_
-#define _CFPS_H_
+//=============================================================================
+
+#pragma once
 
 #include <SDL.h>
 
@@ -26,5 +27,3 @@ public:
 
 	float   GetSpeedFactor();
 };
-
-#endif

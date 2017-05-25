@@ -129,9 +129,6 @@ void CEntity::onAnimate() {
 	anim_Control.onAnimate();
 }
 
-//------------------------------------------------------------------------------
-void CEntity::onCollision(CEntity* Entity) {
-}
 
 //==============================================================================
 void CEntity::onMove(float MoveX, float MoveY) {
@@ -207,38 +204,6 @@ void CEntity::stopMove() {
 		accelX = 0;
 		speedX = 0;
 	}
-}
-
-//==============================================================================
-bool CEntity::collides(int oX, int oY, int oW, int oH) {
-	int left1, left2;
-	int right1, right2;
-	int top1, top2;
-	int bottom1, bottom2;
-
-	int tX = (int)x + col_X;
-	int tY = (int)y + col_Y;
-
-	left1 = tX;
-	left2 = oX;
-
-	right1 = left1 + entityImage->width - 1 - col_Width;
-	right2 = oX + oW - 1;
-
-	top1 = tY;
-	top2 = oY;
-
-	bottom1 = top1 + entityImage->height - 1 - col_Height;
-	bottom2 = oY + oH - 1;
-
-
-	if (bottom1 < top2) return false;
-	if (top1 > bottom2) return false;
-
-	if (right1 < left2) return false;
-	if (left1 > right2) return false;
-
-	return true;
 }
 
 bool CEntity::posValid(int NewX, int NewY) {

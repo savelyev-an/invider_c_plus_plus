@@ -1,6 +1,5 @@
-#ifndef _CEVENT_H_
-#define _CEVENT_H_
-
+//=============================================================================
+#pragma once
 #include <SDL.h>
 
 class C_Event {
@@ -62,5 +61,4 @@ public:
 	virtual void onUser(Uint8 type, int code, void* data1, void* data2);
 };
 
-#endif
 

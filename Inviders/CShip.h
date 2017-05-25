@@ -1,10 +1,10 @@
 //=============================================================================
-#ifndef _CSHIP_H_
-#define _CSHIP_H_
+
+#pragma once
+
 #include "CEntity.h";
 #include "CEntity.h";
 
-//=============================================================================
 class CShip : public CEntity {
 private:
 	//static EntityImage* commonEntityImage;
@@ -14,8 +14,4 @@ public:
 	void shoot();
 	void isHitted();
 };
-
-//=============================================================================
-
-#endif
 

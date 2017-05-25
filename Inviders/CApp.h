@@ -1,3 +1,5 @@
+//=============================================================================
+
 #pragma once
 
 #include <SDL.h>
@@ -72,7 +74,3 @@ public:
 
 	static char* CApp::merge(char * str1, char * str2);
 };
-
-
-
-

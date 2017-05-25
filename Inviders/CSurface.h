@@ -1,5 +1,5 @@
-#ifndef _CSurfaceH_
-#define _CSurfaceH_
+//=============================================================================
+#pragma once
 
 #include <SDL.h>
 #include <SDL_image.h>
@@ -15,4 +15,3 @@ public:
 	static bool transparent(SDL_Surface* surf_Dest, int R, int G, int B);
 };
 
-#endif
